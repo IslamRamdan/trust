@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>TRUST | الثقة للخدمات الإدارية</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="side-contacts">
+        <a href="https://wa.me/962798502477" class="s-link"><i class="fab fa-whatsapp"></i></a>
+        <a href="tel:+962798502477" class="s-link"><i class="fas fa-phone"></i></a>
+        <a href="mailto:info@qtrusts.com" class="s-link"><i class="fas fa-envelope"></i></a>
+    </div>
+    <nav class="floating-nav">
+        <div class="nav-content">
+            <div class="brand">
+                <img src="images/cropped-Trust-Logo-1-2-217x110.png" alt="Trust" class="logo">
+                <span class="brand-name" data-ar="الثقة " data-en="TRUST">الثقة</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#hero" class="active" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+                <li><a href="#about" data-ar="من نحن" data-en="About">من نحن</a></li>
+                <li><a href="#services" data-ar="خدماتنا" data-en="Services">خدماتنا</a></li>
+                <li><a href="#consultation" data-ar="الاستشارات" data-en="Consultancy">الاستشارات</a></li>
+                <li><a href="#training" data-ar="التدريب" data-en="Training">التدريب</a></li>
+                <li><a href="#hiring" data-ar="التوظيف" data-en="Careers">التوظيف</a></li>
+                <li><a href="#why-us" data-ar="لماذا نحن " data-en="why-Us">لماذا نحن </a></li>
+                <li><a href="#achievements" data-ar="إنجازاتنا" data-en="Achievements">إنجازاتنا</a></li>
+                <li><a href="#contact" data-ar="تواصل معنا " data-en="Contact Us">تواصل معنا </a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="langBtn" class="lang-switch">EN</button>
+                <div class="menu-icon" id="menuToggle"><i class="fas fa-bars"></i></div>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#hero" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+            <a href="#about" data-ar="من نحن" data-en="About">من نحن</a>
+            <a href="#services" data-ar="خدماتنا " data-en="Services">خدماتنا </a>
+            <a href="#consultation" data-ar="الاستشارات" data-en="Consultancy">الاستشارات</a>
+            <a href="#training" data-ar="التدريب" data-en="Training">التدريب</a>
+            <a href="#hiring" data-ar="التوظيف" data-en="Careers">التوظيف</a>
+            <a href="#why-us" data-ar="لماذا نحن " data-en="why us">لماذا نحن </a>
+            <a href="#achievements" data-ar=" إنجازاتنا " data-en="Achievements "> إنجازاتنا </a>
+            <a href="#contact" data-ar="تواصل معنا  " data-en="Contact Us ">تواصل معنا</a>
+        </div>
+    </nav>
+    <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1 data-ar="الثقة لخدمات الاستشارات الادارية" data-en="TRUST For Management & Consulting Services">
+                    الثقة لخدمات الاستشارات الادارية </h1>
+                <p class="slogan" data-ar="ابدأ بثقة مع الثقة" data-en="Start with Trust, with TRUST">ابدأ بثقة مع
+                    الثقة</p>
+            </div>
+            <div class="glass-form-v4">
+                <h3 data-ar="طلب استشارة " data-en=" Consultation">طلب استشارة </h3>
+                <form id="consultForm">
+                    <div class="form-row">
+                        <div class="input-box">
+                            <label data-ar="الاسم الكامل" data-en="Full Name">الاسم الكامل</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="input-box">
+                            <label data-ar="رقم الهاتف" data-en="Phone Number">رقم الهاتف</label>
+                            <input type="tel" id="phone" required>
+                        </div>
+                    </div>
+
+                    <div class="input-box">
+                        <label data-ar="مجال الاستشارة" data-en="Consultation Field">مجال الاستشارة</label>
+                        <input type="text" id="subject" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label data-ar="تفاصيل إضافية" data-en="Additional Details">تفاصيل إضافية</label>
+                        <textarea id="details" rows="2"></textarea>
+                    </div>
+
+                    <button type="submit" class="wa-submit-btn">
+                        <span data-ar="إرسال الطلب" data-en="Send Request">إرسال الطلب</span>
+                        <i class="fab fa-whatsapp"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="about-v5" id="about">
+        <div class="container">
+            <div class="about-flex">
+                <div class="visual-side">
+                    <div class="main-img-wrapper">
+                        <img src="images/b7f75d92-2a9a-4499-84f4-34155e244b0e.png" alt="Trust Office"
+                            class="about-main-img">
+                        <div class="floating-shape shape-1"></div>
+                        <div class="floating-shape shape-2"></div>
+                    </div>
+                    <div class="exp-card-float">
+                        <div class="exp-content">
+                            <h2 class="counter" data-target="5">0</h2>
+                            <p data-ar="سنوات من الإنجاز" data-en="Years of Success">سنوات من الإنجاز</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-side">
+                    <div class="section-tag">
+                        <span class="line"></span>
+                        <span data-ar="قصة نجاح بدأت بالثقة" data-en="A Success Story Built on Trust">قصة نجاح بدأت
+                            بالثقة</span>
+                    </div>
+                    <h2 class="about-title">
+                        <span class="navy-txt" data-ar="نحن لا نقدم مجرد استشارات،"
+                            data-en="We don't just consult,">نحن لا نقدم مجرد استشارات،</span><br>
+                        <span class="purple-txt" data-ar="بل نصنع التميز الطبي."
+                            data-en="We craft medical excellence.">بل نصنع التميز الطبي.</span>
+                    </h2>
+
+                    <p class="about-p"
+                        data-ar="منذ عام 2020، انطلقت ترست لتكون الجسر الذي يربط المؤسسات الصحية بالمعايير العالمية. نحن نؤمن ببناء شراكات ذكية تقدم حلولاً عملية Foster Transformation، لنحول التحديات إلى فرص والاعتمادات الدولية إلى واقع ملموس."
+                        data-en="Since 2020, TRUST has been the bridge connecting healthcare institutions to global standards. We believe in building smart partnerships that deliver practical solutions.">
+                        منذ عام 2020، انطلقت ترست لتكون الجسر الذي يربط المؤسسات الصحية بالمعايير العالمية. نحن نؤمن
+                        ببناء شراكات ذكية تقدم حلولاً عملية Foster Transformation، لنحول التحديات إلى فرص والاعتمادات
+                        الدولية إلى واقع ملموس.
+                    </p>
+                    <div class="power-points">
+                        <div class="point">
+                            <div class="icon-box"><i class="fas fa-microscope"></i></div>
+                            <div class="point-txt">
+                                <h4 data-ar="ريادة في المختبرات" data-en="Lab Leadership">ريادة في المختبرات</h4>
+                                <p data-ar="تخصص دقيق في ISO 15189 و CAP" data-en="Specialized in ISO 15189 & CAP">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="point">
+                            <div class="icon-box"><i class="fas fa-chart-line"></i></div>
+                            <div class="point-txt">
+                                <h4 data-ar="نمو مستدام" data-en="Sustainable Growth">نمو مستدام</h4>
+                                <p data-ar="تمكين رأس المال البشري للمستقبل" data-en="Empowering human capital"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-footer">
+                        <div class="client-stat">
+                            <span class="count" data-target="60">0</span><span class="plus">+</span>
+                            <p data-ar="شراكة نجاح إقليمية" data-en="Regional Partnerships">شراكة نجاح إقليمية</p>
+                        </div>
+                        <a href="#services" class="learn-more-btn" data-ar="اكتشف المزيد" data-en="Discover More"
+                            style="text-decoration: none; display: inline-block; text-align: center;">اكتشف المزيد</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services-v7" id="services">
+        <div class="container-v7">
+            <div class="services-intro">
+                <h2 data-ar="خدماتنا الاحترافية" data-en="Our Professional Services">خدماتنا الاحترافية</h2>
+                <div class="title-divider"></div>
+            </div>
+            <div class="services-grid-v7">
+                <div class="service-item-v7">
+                    <div class="icon-box-v7"><i class="fas fa-stethoscope"></i></div>
+                    <h3 data-ar="الاستشارات والجودة" data-en="Consulting & Quality">الاستشارات والجودة</h3>
+                    <p data-ar="نحن متخصصون في تبسيط رحلة الاعتماد للمؤسسات الطبية. نقدم استشارات خبيرة في أنظمة إدارة الجودة المصممة خصيصاً للصناعات المنظمة، وخاصة الرعاية الصحية والمختبرات الطبية. هدفنا هو دعم المنظمات في تحقيق الامتثال الكامل للمعايير المحلية والدولية مثل ISO 15189، CAP ، HCAC ، JCI ."
+                        data-en="We specialize in simplifying the accreditation journey for medical institutions. We offer expert consulting in quality management systems tailored to healthcare and medical laboratories. Our goal is to support organizations in achieving full compliance with standards like ISO 15189, CAP, and JCI.">
+                        نحن متخصصون في تبسيط رحلة الاعتماد للمؤسسات الطبية. نقدم استشارات خبيرة في أنظمة إدارة الجودة
+                        المصممة خصيصاً للصناعات المنظمة، وخاصة الرعاية الصحية والمختبرات الطبية. هدفنا هو دعم المنظمات
+                        في تحقيق الامتثال الكامل للمعايير المحلية والدولية مثل ISO 15189، CAP ، HCAC ، JCI.
+                    </p>
+                    <div class="card-tags">
+                        <span>Quality Systems</span> <span>JCI</span> <span>ISO 15189</span>
+                    </div>
+                </div>
+                <div class="service-item-v7">
+                    <div class="icon-box-v7"><i class="fas fa-vials"></i></div>
+                    <h3 data-ar="برامج الكفاءة PT / EQC" data-en="PT / EQC Programs">برامج الكفاءة PT / EQS</h3>
+                    <p data-ar="بالتعاون مع قادة العالم، نوفر برامج متقدمة لمراقبة الجودة الداخلية والخارجية، بما في ذلك برامج اختبار الكفاءة (PT) وبرمجيات إدارة الجودة (QMS). حلولنا تساعد المرافق الطبية على تقليل الأخطاء البشرية، وتعزيز الكفاءة، وضمان موثوقية التشخيص الطبي من خلال وكالتنا المعتمدة لبرامج CAP,GENQA  العالمية."
+                        data-en="In collaboration with global leaders, we provide advanced internal and external quality control programs, including proficiency testing (PT) and QMS software. Our solutions help medical facilities reduce human errors and ensure diagnostic reliability.">
+                        بالتعاون مع قادة العالم، نوفر برامج متقدمة لمراقبة الجودة الداخلية والخارجية، بما في ذلك برامج
+                        اختبار الكفاءة (PT) وبرمجيات إدارة الجودة (QMS). حلولنا تساعد المرافق الطبية على تقليل الأخطاء
+                        البشرية، وتعزيز الكفاءة، وضمان موثوقية التشخيص الطبي من خلال وكالتنا المعتمدة لبرامج CAP, GENQA
+                        العالمية.
+                    </p>
+                    <div class="card-tags">
+                        <span>PT Solutions</span> <span>EQC</span> <span>Reliability</span>
+                    </div>
+                </div>
+                <div class="service-item-v7">
+                    <div class="icon-box-v7"><i class="fas fa-user-tie"></i></div>
+                    <h3 data-ar="التدريب والتطوير" data-en="Training & Development">التدريب والتطوير</h3>
+                    <p data-ar="نقدم برامج تدريبية متخصصة لمهنيي الرعاية الصحية في المجالات التقنية والإدارية. تركز دوراتنا المعتمدة (CPD) على تطوير المهارات، وتمكين الأفراد، وقيادة النمو المستدام داخل المنظمات. نحن موقع تدريب معتمد لجمعية القلب الأمريكية (AHA) والمجلس التمريضي الأردني، مما يضمن لك شهادات معترف بها محلياً ودولياً."
+                        data-en="We deliver specialized training programs for healthcare professionals. Our accredited courses (CPD) focus on developing skills and driving sustainable growth. We are an authorized AHA training site, ensuring recognized certifications.">
+                        نقدم برامج تدريبية متخصصة لمهنيي الرعاية الصحية في المجالات التقنية والإدارية. تركز دوراتنا
+                        المعتمدة (CPD) على تطوير المهارات، وتمكين الأفراد، وقيادة النمو المستدام داخل المنظمات. نحن موقع
+                        تدريب معتمد لجمعية القلب الأمريكية (AHA) والمجلس التمريضي الأردني، مما يضمن لك شهادات معترف بها
+                        محلياً ودولياً.
+                    </p>
+                    <div class="card-tags">
+                        <span>AHA Training</span> <span>Nursing CPD</span> <span>Medical Laboratory</span>
+                    </div>
+                </div>
+                <div class="service-item-v7">
+                    <div class="icon-box-v7"><i class="fas fa-laptop-medical"></i></div>
+                    <h3 data-ar="مركز امتحانات  " data-en=" test center ">مركز امتحانات </h3>
+                    <p data-ar="باعتبارنا مركز امتحانات معتمد  ,  نوفر بيئة آمنة وموثوقة لتقديم اختبارات الشهادات في مختلف المجالات الاحترافية مثل الرعاية الصحية، وتكنولوجيا المعلومات، والمالية. نوفر للمرشحين بيئة هادئة ومجهزة بأحدث التقنيات لضمان أداء الامتحانات العالمية بكل ثقة واحترافية تامة."
+                        data-en="As an authorized test center, we provide a secure and reliable environment for certification exams in healthcare, IT, and finance. We offer candidates a trusted, high-tech environment for global exams.">
+                        باعتبارنا مركز امتحانات معتمد ، نوفر بيئة آمنة وموثوقة لتقديم اختبارات الشهادات في مختلف
+                        المجالات الاحترافية مثل الرعاية الصحية، وتكنولوجيا المعلومات، والمالية. نوفر للمرشحين بيئة هادئة
+                        ومجهزة بأحدث التقنيات لضمان أداء الامتحانات العالمية بكل ثقة واحترافية تامة.
+                    </p>
+                    <div class="card-tags">
+                        <span>Global Exams</span> <span>IT & Medical</span> <span>Security</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="consultancy-heavy-v9" id="consultation">
+        <div class="container">
+            <div class="heading-v9">
+                <h2 data-ar="منظومة الاستشارات والامتثال الفني"
+                    data-en="Technical Consultation & Compliance Ecosystem">منظومة الاستشارات والامتثال الفني</h2>
+                <p data-ar="نقدم حلولاً استشارية وتدريبية متكاملة في أنظمة الجودة والامتثال العالمية، لتمكين منشأتكم من تحقيق التميز التشغيلي والاعتمادات الدولية."
+                    data-en="We offer comprehensive consulting and training in global quality and compliance systems, enabling your facility to achieve operational excellence.">
+                    نقدم حلولاً استشارية وتدريبية متكاملة في أنظمة الجودة والامتثال العالمية، لتمكين منشأتكم من تحقيق
+                    التميز التشغيلي والاعتمادات الدولية.
+                </p>
+            </div>
+
+            <div class="consult-grid-v9">
+                <div class="c-box-v9">
+                    <div class="c-num">01</div>
+                    <h4 data-ar="نظام HACCP" data-en="HACCP System">نظام HACCP</h4>
+                    <p data-ar="تحليل المخاطر ونقاط التحكم الحرجة لضمان سلامة الغذاء والعمليات الحيوية، وتحديد نقاط الضعف لمنع التلوث."
+                        data-en="Hazard Analysis and Critical Control Points to ensure food safety and prevent contamination in vital processes.">
+                        تحليل المخاطر ونقاط التحكم الحرجة لضمان سلامة الغذاء والعمليات الحيوية، وتحديد نقاط الضعف لمنع
+                        التلوث.
+                    </p>
+                </div>
+                <div class="c-box-v9">
+                    <div class="c-num">02</div>
+                    <h4 data-ar="ممارسات التصنيع GMP" data-en="GMP Practice">ممارسات التصنيع GMP</h4>
+                    <p data-ar="تأهيل خطوط الإنتاج والعمليات للامتثال لمعايير التصنيع الجيد لضمان جودة المنتج النهائي وسلامة المستهلك."
+                        data-en="Qualifying production lines and processes to comply with Good Manufacturing Practice for product quality and consumer safety.">
+                        تأهيل خطوط الإنتاج والعمليات للامتثال لمعايير التصنيع الجيد لضمان جودة المنتج النهائي وسلامة
+                        المستهلك.
+                    </p>
+                </div>
+                <div class="c-box-v9">
+                    <div class="c-num">03</div>
+                    <h4 data-ar="الممارسات المختبرية GLP" data-en="GLP Practice">الممارسات المختبرية GLP</h4>
+                    <p data-ar="تطبيق الأنظمة الرقابية لضمان جودة ونزاهة البيانات المختبرية في مراكز الأبحاث والمختبرات التقنية."
+                        data-en="Applying regulatory systems to ensure the quality and integrity of laboratory data in research and technical labs.">
+                        تطبيق الأنظمة الرقابية لضمان جودة ونزاهة البيانات المختبرية في مراكز الأبحاث والمختبرات التقنية.
+                    </p>
+                </div>
+                <div class="c-box-v9">
+                    <div class="c-num">04</div>
+                    <h4 data-ar="تأسيس دوائر الجودة QA" data-en="QA Dept. Setup">تأسيس دوائر الجودة QA</h4>
+                    <p data-ar="بناء وتأسيس أقسام تأكيد الجودة من الصفر، وتطوير السياسات الرقابية وتدريب الكوادر على إدارتها باحترافية."
+                        data-en="Establishing Quality Assurance departments from scratch, developing policies, and training staff professionally.">
+                        بناء وتأسيس أقسام تأكيد الجودة من الصفر، وتطوير السياسات الرقابية وتدريب الكوادر على إدارتها
+                        باحترافية.
+                    </p>
+                </div>
+                <div class="c-box-v9 highlight-v9">
+                    <div class="c-num">05</div>
+                    <h4 data-ar="اعتماد ISO 15189" data-en="ISO 15189 Accreditation">اعتماد ISO 15189</h4>
+                    <p data-ar="تأهيل المختبرات الطبية للحصول على الاعتماد الدولي الذي يضمن كفاءة النتائج وجودة الخدمات الطبية المقدمة."
+                        data-en="Qualifying medical laboratories for international accreditation ensuring results competence and service quality.">
+                        تأهيل المختبرات الطبية للحصول على الاعتماد الدولي الذي يضمن كفاءة النتائج وجودة الخدمات الطبية
+                        المقدمة.
+                    </p>
+                </div>
+                <div class="c-box-v9">
+                    <div class="c-num">06</div>
+                    <h4 data-ar="نظام ISO 9001" data-en="ISO 9001 QMS">نظام ISO 9001</h4>
+                    <p data-ar="تطبيق المعايير العالمية لإدارة الجودة لتحسين الأداء المؤسسي الشامل وضمان رضا العملاء المستدام."
+                        data-en="Implementing international QMS standards to improve overall institutional performance and customer satisfaction.">
+                        تطبيق المعايير العالمية لإدارة الجودة لتحسين الأداء المؤسسي الشامل وضمان رضا العملاء المستدام.
+                    </p>
+                </div>
+                <div class="c-box-v9">
+                    <div class="c-num">07</div>
+                    <h4 data-ar="اعتماد ISO 17025" data-en="ISO 17025 Competence">اعتماد ISO 17025</h4>
+                    <p data-ar="المتطلبات العامة لكفاءة مختبرات الفحص والمعايرة، مما يضمن دقة ومصداقية النتائج المخبرية عالمياً."
+                        data-en="General requirements for testing and calibration laboratories, ensuring accuracy and global credibility.">
+                        المتطلبات العامة لكفاءة مختبرات الفحص والمعايرة، مما يضمن دقة ومصداقية النتائج المخبرية عالمياً.
+                    </p>
+                </div>
+                <div class="c-box-v9">
+                    <div class="c-num">08</div>
+                    <h4 data-ar="نظم ISO 13485" data-en="ISO 13485 Medical Devices">نظم ISO 13485</h4>
+                    <p data-ar="المعيار الدولي المتخصص لإدارة الجودة في قطاع تصنيع الأجهزة والمستلزمات الطبية والالتزام الرقابي."
+                        data-en="Specialized international QMS for the medical device manufacturing industry and regulatory compliance.">
+                        المعيار الدولي المتخصص لإدارة الجودة في قطاع تصنيع الأجهزة والمستلزمات الطبية والالتزام الرقابي.
+                    </p>
+                </div>
+                <div class="c-box-v9">
+                    <div class="c-num">09</div>
+                    <h4 data-ar="نظام ISO 14001" data-en="ISO 14001 Environment">نظام ISO 14001</h4>
+                    <p data-ar="إدارة البيئة وتقليل الآثار السلبية للعمليات المؤسسية، وتعزيز المسؤولية المجتمعية تجاه البيئة."
+                        data-en="Environmental management to reduce negative impacts of institutional operations and enhance sustainability.">
+                        إدارة البيئة وتقليل الآثار السلبية للعمليات المؤسسية، وتعزيز المسؤولية المجتمعية تجاه البيئة.
+                    </p>
+                </div>
+                <div class="c-box-v9">
+                    <div class="c-num">10</div>
+                    <h4 data-ar="نظام ISO 45001" data-en="ISO 45001 Safety">نظام ISO 45001</h4>
+                    <p data-ar="إدارة السلامة والصحة المهنية لضمان بيئة عمل آمنة، وتقليل حوادث العمل وإصابات الموظفين."
+                        data-en="Occupational health and safety management to ensure a safe work environment and reduce injuries.">
+                        إدارة السلامة والصحة المهنية لضمان بيئة عمل آمنة، وتقليل حوادث العمل وإصابات الموظفين.
+                    </p>
+                </div>
+                <div class="c-box-v9">
+                    <div class="c-num">11</div>
+                    <h4 data-ar="نظام ISO 22000" data-en="ISO 22000 FSMS">نظام ISO 22000</h4>
+                    <p data-ar="نظم إدارة سلامة الغذاء المتكاملة لضمان الجودة في جميع مراحل سلسلة التوريد من المنتج للمستهلك."
+                        data-en="Integrated food safety management systems across all stages of the supply chain.">
+                        نظم إدارة سلامة الغذاء المتكاملة لضمان الجودة في جميع مراحل سلسلة التوريد من المنتج للمستهلك.
+                    </p>
+                </div>
+                <div class="c-box-v9">
+                    <div class="c-num">12</div>
+                    <h4 data-ar="أنظمة التوثيق والبيانات" data-en="Documentation Systems">أنظمة التوثيق والبيانات</h4>
+                    <p data-ar="تطوير ورقمنة أنظمة التوثيق والبيانات الفنية لضمان دقة التتبع وسهولة الوصول للمعلومات عند التفتيش."
+                        data-en="Developing and digitizing documentation systems for traceability and easy access during inspections.">
+                        تطوير ورقمنة أنظمة التوثيق والبيانات الفنية لضمان دقة التتبع وسهولة الوصول للمعلومات عند
+                        التفتيش.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="training-v24-dark" id="training">
+        <div class="container">
+            <div class="t-header-v24">
+                <h2 data-ar="منظومة التدريب التخصصي" data-en="Specialized Training Ecosystem">منظومة التدريب التخصصي
+                </h2>
+                <p data-ar="اختر الوحدة التدريبية وسجل في الدورة المطلوبة"
+                    data-en="Select a training unit and register for the course">
+                    اختر الوحدة التدريبية وسجل في الدورة المطلوبة
+                </p>
+            </div>
+            <div class="training-accordion-v24">
+                @foreach ($courses as $course)
+                    <div class="acc-item-v24">
+                        <div class="acc-header-v24">
+                            <div class="acc-title-v24">
+                                <i class="fas fa-microscope"></i>
+                                <span data-ar="{{ $course->title_ar }}"
+                                    data-en="{{ $course->title_en }}">{{ $course->title_ar }}
+                                </span>
+                            </div>
+                            <i class="fas fa-plus icon-state"></i>
+                        </div>
+                        <div class="acc-content-v24">
+                            @foreach ($course->lessons as $lesson)
+                                <ul>
+                                    <li><span data-ar="{{ $lesson->title_ar }}"
+                                            data-en="{{ $lesson->title_en }}">{{ $lesson->title_ar }}</span>
+                                        <button class="reg-btn" data-ar="تسجيل" data-en="Register"
+                                            onclick="openRegModal('{{ $lesson->title_en }}')">تسجيل</button>
+                                    </li>
+                                </ul>
+                            @endforeach
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+        <div id="trainingModal" class="t-modal">
+            <div class="t-modal-content">
+                <span class="close-modal" onclick="closeRegModal()">&times;</span>
+                <h3 data-ar="طلب تسجيل في دورة" data-en="Course Registration">طلب تسجيل في دورة</h3>
+                <p id="selectedCourseName" style="color: var(--purple); font-weight: bold; margin-bottom: 20px;"></p>
+                <form id="regForm">
+                    <input type="text" id="regName" placeholder="الأسم بالكامل" data-ar="الأسم بالكامل"
+                        data-en="Full Name" required>
+                    <input type="tel" id="regPhone" placeholder="رقم الهاتف" data-ar="رقم الهاتف"
+                        data-en="Phone Number" required>
+                    <button type="submit" class="heavy-submit-btn"><i class="fab fa-whatsapp"></i> <span
+                            data-ar="إرسال " data-en="Send ">إرسال عبر واتساب</span></button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="hiring-premium-v32" id="hiring">
+        <div class="h-glow-bg"></div>
+        <div class="container">
+            <div class="h-grid-v32">
+                <div class="h-content-v32">
+                    <h2 data-ar="هل تمتلك الشغف للتميز؟" data-en="Do You Have the Passion?">هل تمتلك الشغف للتميز؟
+                    </h2>
+                    <p data-ar="نحن في TRUST نبحث دائماً عن المبدعين في مجالات الاستشارات الطبية، الجودة، والتدريب. نوفر لك بيئة عمل عالمية تساعدك على الابتكار والنمو المهني المستمر."
+                        data-en="At TRUST, we always look for innovators in medical consulting, quality, and training. We provide a world-class environment for your professional growth.">
+                        نحن في TRUST نبحث دائماً عن المبدعين في مجالات الاستشارات الطبية، الجودة، والتدريب. نوفر لك بيئة
+                        عمل عالمية تساعدك على الابتكار والنمو المهني المستمر.
+                    </p>
+                    <div class="h-features-v32">
+                        <div class="h-feat"><i class="fas fa-check-double"></i> <span data-ar="تطوير مهني مستمر"
+                                data-en="Continuous Development">تطوير مهني مستمر</span></div>
+                        <div class="h-feat"><i class="fas fa-check-double"></i> <span data-ar="بيئة عمل محفزة"
+                                data-en="Stimulating Environment">بيئة عمل محفزة</span></div>
+                    </div>
+                </div>
+                <div class="h-form-wrapper-v32">
+                    <form id="careerFormV32">
+                        <div class="h-field">
+                            <label data-ar="الاسم الكامل" data-en="Full Name">الاسم الكامل</label>
+                            <input type="text" id="jobName" required>
+                        </div>
+
+                        <div class="h-field-row">
+                            <div class="h-field">
+                                <label data-ar="رقم الهاتف" data-en="Phone Number">رقم الهاتف</label>
+                                <input type="tel" id="jobPhone" required>
+                            </div>
+                            <div class="h-field">
+                                <label data-ar="التخصص المهني" data-en="Professional Specialty">التخصص المهني</label>
+                                <input type="text" id="jobSpec" required>
+                            </div>
+                        </div>
+                        <div class="h-field">
+                            <label data-ar="ارفق السيرة الذاتية (PDF)" data-en="Upload CV (PDF)">ارفق السيرة الذاتية
+                                (PDF)</label>
+                            <div class="custom-file-upload">
+                                <input type="file" id="jobCV" accept=".pdf,.doc,.docx" required>
+                                <div class="file-dummy">
+                                    <i class="fas fa-cloud-upload-alt"></i>
+                                    <span class="file-msg" data-ar="اختر ملف الـ CV من جهازك"
+                                        data-en="Choose CV file">اختر ملف الـ CV من جهازك</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="h-btn-v32">
+                            <span data-ar="إرسال طلب الانضمام" data-en="Submit Application">إرسال طلب الانضمام</span>
+                            <i class="fab fa-whatsapp"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="partners-v25" id="partners">
+        <div class="container">
+            <div class="p-header-v25">
+                <h2 data-ar="الاعتمادات والشراكات الدولية" data-en="Accreditations & Global Partnerships">الاعتمادات
+                    والشراكات الدولية</h2>
+                <div class="p-line"></div>
+            </div>
+            <div class="p-grid-v25">
+                <div class="p-group-v25">
+                    <h4 data-ar="مراكز امتحانات معتمدة" data-en="Authorized Exam Centers">مراكز امتحانات معتمدة</h4>
+                    <div class="logo-stack-v25">
+                        <div class="logo-item-v25">
+                            <img src="images/photo_5848367460304751741_y.jpg" alt="Pearson VUE"
+                                class="center-logo-img">
+                            <span>Pearson VUE</span>
+                        </div>
+                        <div class="logo-item-v25">
+                            <img src="images/photo_5848367460304751742_y.jpg" alt="PSI Exams"
+                                class="center-logo-img">
+                            <span>PSI Exams</span>
+                        </div>
+                        <div class="logo-item-v25">
+                            <img src="images/photo_5848367460304751744_y.jpg" alt="Meazure Learning"
+                                class="center-logo-img">
+                            <span>Meazure Learning</span>
+                        </div>
+                        <div class="logo-item-v25">
+                            <img src="images/photo_5848367460304751743_y.jpg" alt="ITTS" class="center-logo-img">
+                            <span data-ar="ITTS (الخدمات الدولية للاختبارات والتدريب)"
+                                data-en="ITTS (International Testing & Training Services)">
+                                ITTS (International Testing & Training Services)
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-group-v25">
+                    <h4 data-ar="جهات اعتماد البرامج" data-en="Accrediting Bodies">جهات اعتماد البرامج</h4>
+                    <div class="logo-stack-v25">
+                        <div class="logo-item-v25">
+                            <img src="images/aha.jpeg" alt="AHA" class="center-logo-img">
+                            <span>AHA (American Heart Association)</span>
+                        </div>
+                        <div class="logo-item-v25">
+                            <img src="images/aaa.jpeg" alt="AAA" class="center-logo-img">
+                            <span>AAA (American Accreditation Association)</span>
+                        </div>
+                        <div class="logo-item-v25">
+                            <img src="images/WhatsApp Image 2026-03-02 at 1.00.13 PM.jpeg" alt="Nursing Council"
+                                class="center-logo-img">
+                            <span data-ar="المجلس التمريضي الأردني" data-en="Jordanian Nursing Council">المجلس
+                                التمريضي الأردني</span>
+                        </div>
+                        <div class="logo-item-v25">
+                            <img src="images/image.png" alt="High Health Council" class="center-logo-img">
+                            <span data-ar="المجلس الصحي العالي" data-en="High Health Council">المجلس الصحي
+                                العالي</span>
+                        </div>
+                        <div class="logo-item-v25">
+                            <img src="images/WhatsApp Image 2026-03-02 at 1.00.28 PM.jpeg" alt="Medical Council"
+                                class="center-logo-img">
+                            <span data-ar="المجلس الطبي الأردني" data-en="Jordan Medical Council">المجلس الطبي
+                                الأردني</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="p-group-v25">
+                    <h4 data-ar="الوكالات والتمثيل الدولي" data-en="International Agencies">الوكالات والتمثيل الدولي
+                    </h4>
+                    <div class="logo-stack-v25">
+                        <div class="logo-item-v25">
+                            <img src="images/IMG-20260303-WA0000.jpg" alt="CAP" class="center-logo-img">
+                            <span>CAP (College of American Pathologists)</span>
+                        </div>
+                        <div class="logo-item-v25">
+                            <img src="images/WhatsApp Image 2026-03-02 at 1.02.05 PM.jpeg" alt="GenQA"
+                                class="center-logo-img">
+                            <span>GenQA (Genomics Quality Assessment)</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="why-us-v12" id="why-us">
+        <div class="why-bg-gradient"></div>
+        <div class="container-v12">
+            <div class="why-header">
+                <h2 data-ar="لماذا يثق بنا شركاء النجاح؟" data-en="Why Success Partners Trust Us?">لماذا يثق بنا شركاء
+                    النجاح؟</h2>
+                <div class="why-divider"></div>
+                <p data-ar="نحن لا نقدم مجرد خدمات، نحن نبني منظومة متكاملة من الجودة والتميز لضمان ريادتكم في القطاع الطبي والإداري."
+                    data-en="We don't just provide services; we build an integrated system of quality and excellence to ensure your leadership.">
+                </p>
+            </div>
+            <div class="why-features-grid">
+                <div class="feature-card">
+                    <div class="f-icon"><i class="fas fa-microscope"></i></div>
+                    <h4 data-ar="تبسيط رحلة الاعتماد" data-en="Simplified Accreditation">تبسيط رحلة الاعتماد</h4>
+                    <p data-ar="خبرة عميقة في تسهيل الحصول على الاعتمادات الدولية (ISO 15189, CAP, HCAC, JCI) بأقل مجهود وأعلى كفاءة."
+                        data-en="Deep expertise in facilitating international accreditations with minimum effort and maximum efficiency.">
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="f-icon"><i class="fas fa-globe-americas"></i></div>
+                    <h4 data-ar="شراكات عالمية ذكية" data-en="Smart Global Partnerships">شراكات عالمية ذكية</h4>
+                    <p data-ar="تعاون مع قادة العالم لتوفير برامج جودة متقدمة (GENQA, CARIAD) تضمن دقة النتائج التشخيصية وموثوقيتها."
+                        data-en="Collaborating with global leaders to provide advanced quality programs ensuring diagnostic accuracy.">
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="f-icon"><i class="fas fa-user-tie"></i></div>
+                    <h4 data-ar="تطوير رأس المال البشري" data-en="Human Capital Focus">تطوير رأس المال البشري</h4>
+                    <p data-ar="برامج تدريبية معتمدة (CPD) تركز على تمكين الأفراد وتطوير المهارات التقنية والإدارية للمستقبل."
+                        data-en="Accredited training programs (CPD) focusing on empowering individuals and developing future skills.">
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="f-icon"><i class="fas fa-chart-line"></i></div>
+                    <h4 data-ar="حلول مخصصة ذات أثر" data-en="Impactful Solutions">حلول مخصصة ذات أثر</h4>
+                    <p data-ar="نقدم حلولاً عملية مخصصة لكل منشأة تهدف إلى التميز التشغيلي وإحداث تأثير حقيقي وملموس في الأداء."
+                        data-en="Delivering customized practical solutions aiming at operational excellence and measurable impact.">
+                    </p>
+                </div>
+            </div>
+            <div class="why-stats-bar">
+                <div class="stat-item">
+                    <div class="stat-circle">
+                        <span class="stat-num">5+</span>
+                    </div>
+                    <p data-ar="سنوات خبرة" data-en="Years of Experience">سنوات خبرة</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-circle">
+                        <span class="stat-num">50+</span>
+                    </div>
+                    <p data-ar="عميل في الأردن" data-en="Clients in Jordan">عميل في الأردن</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-circle">
+                        <span class="stat-num">10+</span>
+                    </div>
+                    <p data-ar="عملاء الشرق الأوسط" data-en="Middle East Clients">عملاء الشرق الأوسط</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-circle">
+                        <span class="stat-num">50+</span>
+                    </div>
+                    <p data-ar="دورة تدريبية" data-en="Training Courses">دورة تدريبية</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="achievements-v29" id="achievements">
+        <div class="container">
+            <div class="v29-header">
+                <h2 data-ar="معرض الإنجازات والفعاليات" data-en="Achievement & Events Gallery">معرض الإنجازات
+                    والفعاليات</h2>
+                <div class="v29-line"></div>
+            </div>
+            <div class="ach-grid-v29">
+                @foreach ($achievements as $ach)
+                    <div class="ach-card">
+                        <div class="swiper innerSwiper">
+                            <div class="swiper-wrapper">
+                                @if ($ach->images && count($ach->images))
+                                    @foreach ($ach->images as $img)
+                                        <div class="swiper-slide">
+                                            <img src="{{ asset('storage/' . $img) }}" alt="{{ $ach->title_ar }}">
+                                        </div>
+                                    @endforeach
+                                @else
+                                    <div class="swiper-slide">
+                                        <img src="images/default.jpg" alt="No image">
+                                    </div>
+                                @endif
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="ach-text">
+                            <h3 data-ar="{{ $ach->title_ar }}" data-en="{{ $ach->title_en }}">
+                                {{ $ach->title_ar }}
+                            </h3>
+                            <p data-ar="{{ $ach->description_ar }}" data-en="{{ $ach->description_en }}">
+                                {{ $ach->description_ar }}
+                            </p>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    </section>
+    <section class="ceo-circle-v23" id="team">
+        <div class="container">
+            <div class="ceo-grid-v23">
+                <div class="ceo-visual-v23">
+                    <div class="circle-wrapper">
+                        <div class="rotating-border"></div>
+                        <div class="image-inner">
+                            <img src="images/c0962530-cbcf-44a9-b632-0095c6a0603f.jpg" alt="Dr. Salah Bohisi">
+                        </div>
+                    </div>
+                </div>
+                <div class="ceo-content-v23">
+                    <div class="title-area">
+                        <h2 data-ar="قيادة ترتكز على الخبرة" data-en="Leadership Based on Expertise">قيادة ترتكز على
+                            الخبرة</h2>
+                        <h3 data-ar="د. صلاح بحيصي" data-en="Dr. Salah Bohisi">د. صلاح بحيصي</h3>
+                        <p class="role-p" data-ar="المدير التنفيذي | مرجع دولي ومقيم معتمد في الجودة"
+                            data-en="CEO | Int'l Reference & Certified Assessor">المدير التنفيذي | مرجع دولي ومقيم
+                            معتمد في الجودة</p>
+                    </div>
+                    <div class="cards-stack-v23">
+                        <div class="bio-card-v23">
+                            <div class="card-icon-title">
+                                <i class="fas fa-user-check"></i>
+                                <h5 data-ar="النبذة المهنية" data-en="Professional Bio">النبذة المهنية</h5>
+                            </div>
+                            <p data-ar="خبير رائد حاصل على شهادة ASCP BB ومقيم معتمد لدى AABB العالمية، قاد رحلة الاعتماد لكبرى المنشآت الطبية وصاغ معايير الجودة الوطنية."
+                                data-en="A leading expert holding ASCP BB and AABB Assessor, led accreditation for major medical facilities and drafted national quality standards.">
+                                خبير رائد حاصل على شهادة ASCP BB ومقيم معتمد لدى AABB العالمية، قاد رحلة الاعتماد لكبرى
+                                المنشآت الطبية وصاغ معايير الجودة الوطنية.
+                            </p>
+                        </div>
+                        <div class="bio-card-v23 highlight-ach">
+                            <div class="card-icon-title">
+                                <i class="fas fa-award"></i>
+                                <h5 data-ar="إنجازات محورية" data-en="Key Achievements">إنجازات محورية</h5>
+                            </div>
+                            <ul class="ach-list">
+                                <li data-ar="تأسيس وإدارة بنك دم معتمد من CAP بمركز الحسين للسرطان."
+                                    data-en="Established and managed a CAP-accredited blood bank at KHCC.">تأسيس وإدارة
+                                    بنك دم معتمد من CAP بمركز الحسين للسرطان.</li>
+                                <li data-ar="مقيم معتمد لدى CAP لبنوك الدم في منطقة الشرق الأوسط."
+                                    data-en="Certified CAP Assessor for Middle East blood banks.">مقيم معتمد لدى CAP
+                                    لبنوك الدم في منطقة الشرق الأوسط.</li>
+                                <li data-ar="المشاركة في وضع معايير بنك الدم مع مجلس اعتماد المؤسسات الصحية (HCAC)."
+                                    data-en="Participated in setting blood bank standards with HCAC.">المشاركة في وضع
+                                    معايير بنك الدم مع مجلس اعتماد المؤسسات الصحية (HCAC).</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="badges-row-v23">
+                        <span class="badge-v23">ASCP Certified</span>
+                        <span class="badge-v23">AABB Assessor</span>
+                        <span class="badge-v23">CAP Assessor</span>
+                        <span class="badge-v23">HCAC Expert</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-dark-v19" id="contact">
+        <div class="container-v19">
+            <div class="contact-upper-grid">
+                <div class="numbers-col">
+                    <h3 data-ar="قنوات الاتصال المباشر" data-en="Direct Contact Channels">قنوات الاتصال المباشر</h3>
+                    <div class="glass-num-card">
+                        <div class="num-txt">+962 7 9591 2084</div>
+                        <div class="num-actions">
+                            <a href="tel:+962795912084" class="icon-btn call"><i class="fas fa-phone-alt"></i></a>
+                            <a href="https://wa.me/962795912084" target="_blank" class="icon-btn whatsapp"><i
+                                    class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <div class="glass-num-card">
+                        <div class="num-txt">+962 7 9850 2477</div>
+                        <div class="num-actions">
+                            <a href="tel:+962798502477" class="icon-btn call"><i class="fas fa-phone-alt"></i></a>
+                            <a href="https://wa.me/962798502477" target="_blank" class="icon-btn whatsapp"><i
+                                    class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <div class="glass-num-card">
+                        <div class="num-txt">+962 7 9603 4647</div>
+                        <div class="num-actions">
+                            <a href="tel:+962796034647" class="icon-btn call"><i class="fas fa-phone-alt"></i></a>
+                            <a href="https://wa.me/962796034647" target="_blank" class="icon-btn whatsapp"><i
+                                    class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-col">
+                    <h3 data-ar="مكاتبنا الدولية" data-en="Our Global Offices">مكاتبنا الدولية</h3>
+
+                    <div class="info-item-v19">
+                        <div class="i-circle"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h5 data-ar="فرع عمّان - الأردن" data-en="Amman Branch - Jordan">فرع عمّان - الأردن</h5>
+                            <p data-ar="تلاع العلي - المقر الرئيسي" data-en="Tla'a Al-Ali - HQ">تلاع العلي - المقر
+                                الرئيسي</p>
+                        </div>
+                    </div>
+                    <div class="info-item-v19">
+                        <div class="i-circle"><i class="fas fa-map-marked-alt"></i></div>
+                        <div>
+                            <h5 data-ar="فرع الدوحة - قطر" data-en="Doha Branch - Qatar">فرع الدوحة - قطر</h5>
+                            <p data-ar="مركز الاستشارات والحلول الإقليمي" data-en="Regional Solutions Center"></p>
+                        </div>
+                    </div>
+
+                    <div class="info-item-v19 email-item">
+                        <div class="i-circle"><i class="fas fa-envelope-open-text"></i></div>
+                        <div>
+                            <h5 data-ar="البريد الإلكتروني" data-en="Official Email">البريد الإلكتروني</h5>
+                            <a href="mailto:info@qtrusts.com">info@qtrusts.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="map-container-v19">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3383.8569724128543!2d35.862089476360655!3d31.99591427400041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151ca12ff4a4e963%3A0x58f56eaaa33b106e!2sTRUST%20for%20Management%20and%20Consulting%20Services!5e0!3m2!1sen!2sjo!4v1740942337719!5m2!1sen!2sjo"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-final-v21">
+        <div class="container">
+            <div class="footer-main-grid">
+                <div class="footer-col brand-info">
+                    <div class="footer-logo-area">
+                        <img src="images/cropped-Trust-Logo-1-2-217x110.png" alt="TRUST Logo">
+                        <span data-ar="الثقة " data-en="TRUST ">الثقة </span>
+                    </div>
+                    <p class="footer-about-text"
+                        data-ar="شريككم الاستراتيجي لتحقيق التميز التشغيلي والاعتمادات الدولية في القطاعات الصحية والمنظمة منذ عام 2020."
+                        data-en="Your strategic partner for operational excellence and international accreditations in healthcare since 2020.">
+                        شريككم الاستراتيجي لتحقيق التميز التشغيلي والاعتمادات الدولية في القطاعات الصحية والمنظمة منذ
+                        عام 2020.
+                    </p>
+                </div>
+                <div class="footer-col fast-links">
+                    <h4 data-ar="روابط سريعة" data-en="Quick Links">روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#hero" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+                        <li><a href="#about" data-ar="من نحن" data-en="About Us">من نحن</a></li>
+                        <li><a href="#services" data-ar="خدماتنا" data-en="Services">خدماتنا</a></li>
+                        <li><a href="#consultation" data-ar="الاستشارات" data-en="Consultancy">الاستشارات</a></li>
+                        <li><a href="#training" data-ar="التدريب" data-en="Training">التدريب</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col full-contact">
+                    <h4 data-ar="تواصل مباشر" data-en="Direct Contact">تواصل مباشر</h4>
+                    <div class="f-contact-block">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="f-details">
+                            <a href="tel:+962795912084" dir="ltr">+962 7 9591 2084</a>
+                            <a href="tel:+962798502477" dir="ltr">+962 7 9850 2477</a>
+                            <a href="tel:+962796034647" dir="ltr">+962 7 9603 4647</a>
+                        </div>
+                    </div>
+                    <div class="f-contact-block">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="f-details">
+                            <span data-ar="عمّان - الأردن  " data-en="Amman - Jordan ">عمّان - الأردن </span>
+                            <span data-ar="الدوحة - قطر " data-en="Doha - Qatar ">الدوحة - قطر </span>
+                        </div>
+                    </div>
+
+                    <div class="f-contact-block">
+                        <i class="fas fa-envelope"></i>
+                        <div class="f-details">
+                            <a href="mailto:info@qtrusts.com">info@qtrusts.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-credits-bar">
+                <div class="copy-text">
+                    <p>&copy; 2026 <span data-ar="ترست للخدمات الإدارية والاستشارية. جميع الحقوق محفوظة."
+                            data-en="TRUST Management. All Rights Reserved.">ترست للخدمات الإدارية والاستشارية. جميع
+                            الحقوق محفوظة.</span></p>
+                </div>
+                <div class="gmt-credit">
+                    <span data-ar="تصميم وبرمجة" data-en="Designed & Developed by">تصميم وبرمجة</span>
+                    <a href="https://www.facebook.com/share/17UzqgSwiu/" target="_blank">GMTWeb</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
