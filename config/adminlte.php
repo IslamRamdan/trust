@@ -330,6 +330,12 @@ return [
             'url'  => 'admin/achievements',
             'label_color' => 'success',
         ],
+        [
+            'text' => 'بيانات التواصل',
+            'icon' => 'fas fa-address-book',
+            'url'  => 'admin/contacts',
+            'label_color' => 'success',
+        ],
     ],
 
     /*

@@ -12,9 +12,21 @@
 
 <body>
     <div class="side-contacts">
-        <a href="https://wa.me/962798502477" class="s-link"><i class="fab fa-whatsapp"></i></a>
-        <a href="tel:+962798502477" class="s-link"><i class="fas fa-phone"></i></a>
-        <a href="mailto:info@qtrusts.com" class="s-link"><i class="fas fa-envelope"></i></a>
+        {{-- رابط واتساب - يستخدم الرقم الأول --}}
+        <a href="https://wa.me/{{ preg_replace('/\D/', '', $contactDetails->phone_1 ?? '-') ?? '-' }}" class="s-link"
+            target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+        {{-- رابط الاتصال - يستخدم الرقم الأول --}}
+        <a href="tel:{{ $contactDetails->phone_1 ?? '-' }}" class="s-link">
+            <i class="fas fa-phone"></i>
+        </a>
+
+        {{-- رابط الإيميل --}}
+        <a href="mailto:{{ $contactDetails->email ?? '-' }}" class="s-link">
+            <i class="fas fa-envelope"></i>
+        </a>
     </div>
     <nav class="floating-nav">
         <div class="nav-content">
@@ -707,30 +719,30 @@
             <div class="contact-upper-grid">
                 <div class="numbers-col">
                     <h3 data-ar="قنوات الاتصال المباشر" data-en="Direct Contact Channels">قنوات الاتصال المباشر</h3>
-                    <div class="glass-num-card">
-                        <div class="num-txt">+962 7 9591 2084</div>
-                        <div class="num-actions">
-                            <a href="tel:+962795912084" class="icon-btn call"><i class="fas fa-phone-alt"></i></a>
-                            <a href="https://wa.me/962795912084" target="_blank" class="icon-btn whatsapp"><i
-                                    class="fab fa-whatsapp"></i></a>
-                        </div>
-                    </div>
-                    <div class="glass-num-card">
-                        <div class="num-txt">+962 7 9850 2477</div>
-                        <div class="num-actions">
-                            <a href="tel:+962798502477" class="icon-btn call"><i class="fas fa-phone-alt"></i></a>
-                            <a href="https://wa.me/962798502477" target="_blank" class="icon-btn whatsapp"><i
-                                    class="fab fa-whatsapp"></i></a>
-                        </div>
-                    </div>
-                    <div class="glass-num-card">
-                        <div class="num-txt">+962 7 9603 4647</div>
-                        <div class="num-actions">
-                            <a href="tel:+962796034647" class="icon-btn call"><i class="fas fa-phone-alt"></i></a>
-                            <a href="https://wa.me/962796034647" target="_blank" class="icon-btn whatsapp"><i
-                                    class="fab fa-whatsapp"></i></a>
-                        </div>
-                    </div>
+                    @foreach (['phone_1', 'phone_2', 'phone_3'] as $phoneField)
+                        @if ($contactDetails->$phoneField)
+                            @php
+                                // تنظيف الرقم من المسافات وعلامة + لروابط wa.me و tel
+                                $cleanNumber = preg_replace('/\D/', '', $contactDetails->$phoneField);
+                            @endphp
+
+                            <div class="glass-num-card">
+                                <div class="num-txt">{{ $contactDetails->$phoneField }}</div>
+                                <div class="num-actions">
+                                    {{-- زر الاتصال --}}
+                                    <a href="tel:{{ $cleanNumber }}" class="icon-btn call">
+                                        <i class="fas fa-phone-alt"></i>
+                                    </a>
+
+                                    {{-- زر الواتساب --}}
+                                    <a href="https://wa.me/{{ $cleanNumber }}" target="_blank"
+                                        class="icon-btn whatsapp">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        @endif
+                    @endforeach
                 </div>
                 <div class="info-col">
                     <h3 data-ar="مكاتبنا الدولية" data-en="Our Global Offices">مكاتبنا الدولية</h3>
@@ -755,7 +767,8 @@
                         <div class="i-circle"><i class="fas fa-envelope-open-text"></i></div>
                         <div>
                             <h5 data-ar="البريد الإلكتروني" data-en="Official Email">البريد الإلكتروني</h5>
-                            <a href="mailto:info@qtrusts.com">info@qtrusts.com</a>
+                            <a
+                                href="mailto:{{ $contactDetails->email ?? '-' }}">{{ $contactDetails->email ?? '-' }}</a>
                         </div>
                     </div>
                 </div>
@@ -799,9 +812,14 @@
                     <div class="f-contact-block">
                         <i class="fas fa-phone-alt"></i>
                         <div class="f-details">
-                            <a href="tel:+962795912084" dir="ltr">+962 7 9591 2084</a>
-                            <a href="tel:+962798502477" dir="ltr">+962 7 9850 2477</a>
-                            <a href="tel:+962796034647" dir="ltr">+962 7 9603 4647</a>
+                            @foreach (['phone_1', 'phone_2', 'phone_3'] as $field)
+                                @if ($contactDetails->$field)
+                                    <a href="tel:{{ preg_replace('/\D/', '', $contactDetails->$field) }}"
+                                        dir="ltr">
+                                        {{ $contactDetails->$field }}
+                                    </a>
+                                @endif
+                            @endforeach
                         </div>
                     </div>
                     <div class="f-contact-block">
@@ -815,7 +833,8 @@
                     <div class="f-contact-block">
                         <i class="fas fa-envelope"></i>
                         <div class="f-details">
-                            <a href="mailto:info@qtrusts.com">info@qtrusts.com</a>
+                            <a
+                                href="mailto:{{ $contactDetails->email ?? '-' }}">{{ $contactDetails->email ?? '-' }}</a>
                         </div>
                     </div>
                 </div>
