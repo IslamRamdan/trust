@@ -720,7 +720,7 @@
                 <div class="numbers-col">
                     <h3 data-ar="قنوات الاتصال المباشر" data-en="Direct Contact Channels">قنوات الاتصال المباشر</h3>
                     @foreach (['phone_1', 'phone_2', 'phone_3'] as $phoneField)
-                        @if ($contactDetails->$phoneField)
+                        @if ($contactDetails?->$phoneField)
                             @php
                                 // تنظيف الرقم من المسافات وعلامة + لروابط wa.me و tel
                                 $cleanNumber = preg_replace('/\D/', '', $contactDetails->$phoneField);
@@ -813,7 +813,7 @@
                         <i class="fas fa-phone-alt"></i>
                         <div class="f-details">
                             @foreach (['phone_1', 'phone_2', 'phone_3'] as $field)
-                                @if ($contactDetails->$field)
+                                @if ($contactDetails?->$field)
                                     <a href="tel:{{ preg_replace('/\D/', '', $contactDetails->$field) }}"
                                         dir="ltr">
                                         {{ $contactDetails->$field }}
